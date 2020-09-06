@@ -23,7 +23,7 @@ public abstract class BaseTest{
 	protected static ReportActions actReport;
  
     @BeforeEach
-    void abrirBrowser(){
+    void openBrowser(){
     	WebDriverManager.chromedriver().setup();
     	driver = new ChromeDriver();  
 	 	driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
