@@ -18,7 +18,6 @@ Será necessário estar instalado e configurado no ambiente:
 1. Abrir o projeto na Eclipse IDE.
 2. Seguir o caminho "src/test/java".
 3. Abrir o pacote "runner".
-4. Clicar com o botão direito no arquivo "TestRunner.java", em seguida, selecionar a opção "Run As" e selecionar "JUnit Test".
-5. Aguardar a execução de todos os testes.
- 
- 
+4. Clicar com o botão direito no arquivo "TestRunner.java"
+5. Em seguida, selecionar a opção "Run As" e selecionar a opção "JUnit Test".
+6. Aguardar a execução de todos os testes.
