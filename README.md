@@ -8,6 +8,7 @@ Será necessário estar instalado e configurado no ambiente:
 - JDK Java 1.8 - [Download](http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html)
  
 ### Tecnologias: 
+- Java
 - JUnit5
 - Page Objects
 - Maven
