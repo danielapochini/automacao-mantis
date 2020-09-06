@@ -23,7 +23,18 @@ public class RecoverPage extends PageObject{
 
 	@FindBy(xpath="/html[1]/body[1]/div[2]/table[1]/tbody[1]/tr[2]/td[1]/p[1]")
 	private WebElement errorMessage;
+	
+	@FindBy(xpath="/html[1]/body[1]/div[2]/table[1]/tbody[1]/tr[1]/td[1]/b[1]")
+	private WebElement successMessage;
  
+	public WebElement getSuccessMessage() {
+		return successMessage;
+	}
+
+	public void setSuccessMessage(WebElement successMessage) {
+		this.successMessage = successMessage;
+	}
+
 	public WebElement getUsername() {
 		return username;
 	}

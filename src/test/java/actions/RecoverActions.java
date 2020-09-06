@@ -24,7 +24,7 @@ public class RecoverActions {
 		objRecover.getEmail().sendKeys(email);
 		objRecover.getBtnSubmit().click(); 
 		String expectedResult = "Password Message Sent";
-		String actualResult = objRecover.getErrorMessage().getText();
+		String actualResult = objRecover.getSuccessMessage().getText();
 		assertEquals(expectedResult, actualResult);
 	}
 	

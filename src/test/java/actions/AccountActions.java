@@ -1,6 +1,7 @@
 package actions;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.openqa.selenium.WebDriver;
 
@@ -32,7 +33,7 @@ public class AccountActions {
 	}
 	
 	public void clickProfile() {
-		objAcc.getBtnProfile().click();
+		objAcc.getBtnProfile().click(); 
 	}
 	 
 	public void addNewProfile() {
@@ -90,8 +91,8 @@ public class AccountActions {
 		objAcc.getPlatform().sendKeys(platform);
 		objAcc.getBtnSubmit().submit(); 
 		String expectedResult = "Teste Auto 2 2020 05.09";
-		String actualResult = objAcc.getSelectProfile().getText();
-		assertEquals(expectedResult, actualResult);
+		boolean actualResult = objAcc.getSelectProfile().getText().contains(expectedResult);
+		assertTrue(actualResult);
 	}
 	
 	public void tryPermission() {
